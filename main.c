@@ -76,7 +76,6 @@ void checkDie(void)
           if (player_status[i] == PLAYERSTATUS_LIVE)
           {
                flag_end = 0;
-               printf("all player is die");
                break;
           }
       }
@@ -211,8 +210,10 @@ int main(int argc, char *argv[])
     if (turn == 0)
     {
        //상어 동작 
+       
        int shark_pos = board_stepShark();
-       //printf();상어가이동햇다
+       
+       printf("Shark is %i \n",shark_pos);
        checkDie();
         
     }
